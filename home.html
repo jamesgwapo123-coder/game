@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="script.js" defer></script>
+<title>Tetris</title>
+<style>
+  body {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    user-select: none;
+  }
+
+  #tetris {
+    border: 4px solid #555;
+    background: #5808da;
+    width: 240px; /* 10 blocks * 24px each */
+    height: 480px; /* 20 blocks * 24px each */
+    position: relative;
+  }
+
+  canvas {
+    display: block;
+    background: #111;
+  }
+
+  #score {
+    margin-left: 20px;
+    font-size: 1.2rem;
+  }
+
+  #container {
+    display: flex;
+  }
+
+  #next {
+    border: 2px solid #555;
+    background: #222;
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+  <div id="container">
+    <div>
+      <canvas id="tetris" width="240" height="480"></canvas>
+      <div id="score" style="color: white; font-size: 20px; margin-bottom: 10px;">
+  Score: 0
+</div>
+    </div>
+    <div style="margin-left: 20px;">
+      <div>Next:</div>
+      <canvas id="next" width="120" height="120"></canvas>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>
